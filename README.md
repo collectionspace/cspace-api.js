@@ -6,3 +6,4 @@ This library provides a JavaScript API for operating on CollectionSpace resource
 
 - Supports browsers and Node.js
 - [Promise](http://www.html5rocks.com/en/tutorials/es6/promises/) based
+
