@@ -15,7 +15,7 @@
   "main": "src/index.js",
   "scripts": {
     "clean": "rimraf lib dist coverage",
-    "coverage": "istanbul report --root coverage",
+    "coverage": "istanbul report --root coverage text && istanbul report --root coverage lcov",
     "doc": "documentation readme src/*.js -s \"API\"",
     "lint": "eslint *.js src test examples",
     "build": "npm run build-dev && npm run build-prod",
@@ -74,8 +74,7 @@
       "src/**/*.js"
     ],
     "reporter": [
-      "json",
-      "text"
+      "json"
     ],
     "report-dir": "./coverage/Node.js",
     "sourceMap": false,

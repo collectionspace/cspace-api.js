@@ -8,8 +8,8 @@ before_script:
 script:
   - npm run check
   - npm run build
-after_success:
   - npm run coverage
+after_success:
   - "cat coverage/lcov.info | coveralls"
 cache:
   directories:
